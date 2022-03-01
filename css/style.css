@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(151, 238, 231), rgb(131, 114, 172));
+}
+
+div.container {
+    height: 80%;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px white;
+    transform: translateY(10%);
+}
+
+h1.to-do {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: 'Oswald', arial, sans-serif;
+}
+
+form.to-do {
+    text-align: center;
+}
+
+.to-do * {
+    font-family: 'Oswald', arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.to-do input {
+    width: 65%;
+    height: 5vh;
+    padding: 0 15px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.to-do input:focus {
+    outline: none;
+}
+
+.to-do button {
+    width: 15%;
+    height: 5vh;
+    margin-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    color: black;
+    background-image: linear-gradient(to bottom right, rgb(112, 129, 228), rgb(85, 149, 165));
+    cursor: pointer;
+}
