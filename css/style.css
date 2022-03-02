@@ -14,16 +14,15 @@ div.container {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-height: 70vh;
+    min-height: 75vh;
     max-height: 95vh;
-    width: 30vw;
+    width: 45vw;
     padding-bottom: 30px;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 10px 3px white;
     color: rgb(46, 46, 46);
     transform: translate(-50%, -50%);
-
 }
 
 ul.to-do {
@@ -33,7 +32,7 @@ ul.to-do {
 
 h1.to-do {
     width: 100%;
-    padding: 15px 10px;
+    padding: 15px 10px 30px;
     font-size: 30px;
     font-weight: 300;
     font-family: 'Oswald', arial, sans-serif;
@@ -70,6 +69,7 @@ form.to-do {
 .to-do button {
     width: 15%;
     height: 5vh;
+    padding: 2px 5px;
     margin-left: 10px;
     border-style: none;
     border-radius: 5px;
@@ -86,7 +86,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5vh;
+    min-height: 5vh;
     padding-left: 20px;
     width: calc(80% + 10px);
     margin: 3% auto;
@@ -107,10 +107,13 @@ li div {
 
 li p {
     flex-grow: 1;
+    overflow-x: hidden;
+    max-width: calc(100% - 15px - 20px - 15% - 10px);
 }
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -140,5 +143,21 @@ li p {
 
     li {
         height: 8vh;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .to-do * {
+        font-size: 12px;
+    }
+
+    .to-do button {
+        width: 25%;
+        padding: 4px 10px;
+    }
+
+    li p {
+        max-width: calc(100% - 15px - 20px - 25% - 20px);
     }
 }
