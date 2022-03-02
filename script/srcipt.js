@@ -7,11 +7,8 @@ e.preventDefault()
 const taskName = toDoInput.value;
 if (taskName === "") return;
 const newTask = document.createElement('li');
-newTask.innerHTML = "<div></div>" + "<p>" + taskName + "</p>";
-const btn = document.createElement('button');
-btn.textContent="X";
+newTask.innerHTML = "<div></div>" + "<p>" + taskName + "</p>"+"<button>Delete</button>";
 list.appendChild(newTask);
-newTask.appendChild(btn);
 toDoInput.value = "";
 
 const remove = (e) => {
@@ -22,12 +19,12 @@ document.querySelectorAll('li button').forEach(item => item.addEventListener('cl
 const lineThrough = (e) => {
     e.target.nextSibling.style.textDecoration = "line-through";
     e.target.nextSibling.style.color = "grey";
+    e.target.parentNode.style.backgroundColor = "rgba(255,255,255, 0.5";
     e.target.style.backgroundColor = "rgb(85, 149, 165)";
 }
 document.querySelectorAll('li div').forEach(item => item.addEventListener('click', lineThrough))
 
 }
 toDoForm.addEventListener('submit', addTasks)
-
 
 
