@@ -10,7 +10,7 @@ Simple, intuitive and fully responsive to-do list application. The app allows yo
 • HTML5<br>
 • CSS3<br>
 • javaScript<br>
-## Screen shots
+## Screenshots
 ![screeny](https://user-images.githubusercontent.com/99404981/156352362-510e5a43-58b5-455a-adbd-3f1256e814f3.png)
 
 
